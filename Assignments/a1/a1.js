@@ -90,8 +90,6 @@ rl.question("Do you wish to process a File (f) or directory (d): ", function(ans
                 {
                     outputFiles = files.reverse(); 
                     outputFiles = files.toString().replace(/\s+/g, ", "); 
-                    //console.log('Files (reverse aplhabetical order): ' + outputFiles); 
-
                     console.log('Files (reverse aplhabetical order): ' + outputFiles); 
                 }
                 rl.close();
