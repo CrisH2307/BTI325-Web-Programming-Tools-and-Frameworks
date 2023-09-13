@@ -76,17 +76,22 @@ rl.question("Do you wish to process a File (f) or directory (d): ", function(ans
             rl.close();
         })
     }
-    else if (ans.toLowerCase() == "d") {
-        rl.question("Directory: ", function(directory) {
-            fs.readdir(directory, function(err, files) {
-                if (err) {
+    else if (ans.toLowerCase() == "d") 
+    {
+        rl.question("Directory: ", function(directory) 
+        {
+            fs.readdir(directory, function(err, files) 
+            {
+                if (err) 
+                {
                     console.log(err.message);
                     rl.close();
                 } else {
                     let outputFiles = files
                         .sort()
                         .reverse()
-                        .map(function(file) {
+                        .map(function(file) 
+                        {
                             const stats = fs.statSync(directory + '/' + file);
                             return `${file}: ${stats.size} bytes`;
                         })
