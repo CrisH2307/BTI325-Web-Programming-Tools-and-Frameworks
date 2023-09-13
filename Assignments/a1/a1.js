@@ -98,7 +98,8 @@ rl.question("Do you wish to process a File (f) or directory (d): ", function(ans
             });
         });
     }    
-    else{
+    else
+    {
         console.log("Invalid Section");
         rl.close();
     }
