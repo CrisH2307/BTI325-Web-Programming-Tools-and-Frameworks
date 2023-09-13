@@ -76,26 +76,28 @@ rl.question("Do you wish to process a File (f) or directory (d): ", function(ans
             rl.close();
         })
     }
-    else if (ans.toLowerCase() == "d")
-    {
-        rl.question("Directory: " , function(directory)
-        {
-            fs.readFile(directory, function(err, files)
-            {
-                if(err)
-                {
+    else if (ans.toLowerCase() == "d") {
+        rl.question("Directory: ", function(directory) {
+            fs.readdir(directory, function(err, files) {
+                if (err) {
                     console.log(err.message);
+                    rl.close();
+                } else {
+                    let outputFiles = files
+                        .sort()
+                        .reverse()
+                        .map(function(file) {
+                            const stats = fs.statSync(directory + '/' + file);
+                            return `${file}: ${stats.size} bytes`;
+                        })
+                        .join('\n');
+    
+                    console.log('Files (reverse alphabetical order with sizes): \n' + outputFiles);
+                    rl.close();
                 }
-                else
-                {
-                    outputFiles = files.reverse(); 
-                    outputFiles = files.toString().replace(/\s+/g, ", "); 
-                    console.log('Files (reverse aplhabetical order): ' + outputFiles); 
-                }
-                rl.close();
             });
         });
-    }
+    }    
     else{
         console.log("Invalid Section");
         rl.close();
