@@ -8,7 +8,7 @@
         Name: Cris Huynh 
         Student ID: 105444228 
         Date: Sep 7th, 2023
-        *
+*
 ********************************************************************************/
 
 const readline = require("readline");
