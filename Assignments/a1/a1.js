@@ -13,7 +13,6 @@
 
 const readline = require("readline");
 const fs = require('fs');
-
 const rl = readline.createInterface(process.stdin, process.stdout);
 
 rl.question("Do you wish to process a File (f) or directory (d): ", function(ans)
@@ -108,5 +107,5 @@ rl.question("Do you wish to process a File (f) or directory (d): ", function(ans
         console.log("Invalid Section");
         rl.close();
     }
-})
+});
 
