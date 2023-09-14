@@ -5,7 +5,8 @@
 * (including web sites) or distributed to other students.
 *
 * 
-        Name: Cris Huynh Student 
+        Name: Cris Huynh 
+        Student 
         ID: 105444228 
         Date: Sep 7th, 2023
         *
