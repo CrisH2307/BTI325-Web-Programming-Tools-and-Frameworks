@@ -4,7 +4,8 @@
 ### Professor: Patrick Crawford <br />
 
 # Marks secured
-+ Assignment 1: 12/12
++ Assignment 1: 12/12 <br/>
++ Assignment 2:
 
 
 
