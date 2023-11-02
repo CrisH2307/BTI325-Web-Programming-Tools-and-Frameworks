@@ -5,7 +5,7 @@
 
 # Marks secured
 + Assignment 1: 12/12 <br/>
-+ Assignment 2:
++ Assignment 2: 11.5/12 <br/>
 
 
 
