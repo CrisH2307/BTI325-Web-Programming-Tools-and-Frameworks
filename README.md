@@ -8,10 +8,11 @@
 + Assignment 2: 11.5/12 <br/>
 + Assignment 3: 15.5/17 <br/>
 + Assignment 4: 11.5/12 <br/>
++ Assignment 5: 12/17 <br/>
++ Assignment 6: 19/20 <br/>
 
 
-
-### COURSE GRADE: A
+### COURSE GRADE: A+
 
 # Disclaimer
 Please don't just copy the code mindlessly without trying to solve the problems yourself :)
